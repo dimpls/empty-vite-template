@@ -1,0 +1,631 @@
+@import './src/helper';
+@import './src/logo.less';
+@color_signIn: #336fee;
+@font-weight_h1: 900;
+@font-weight_span: 400;
+@font-weight_700: 700;
+@font-weight_800: 800;
+@color_white_background: #f6f7f8;
+@color_yellow_background: #ffdd2d;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header_container {
+  width: 100%;
+  height: 104px;
+  background: @color_white_background;
+}
+
+.header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  margin-left: 128px;
+}
+
+.logo {
+  height: 34px;
+  width: 150px;
+  background-image: url('https://www.cdn-tinkoff.ru/frontend-libraries/pfcore-static-assets/logos/main-logo.svg');
+}
+
+.navigation_menu {
+  display: flex;
+  margin-left: 48px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header_buttons {
+  height: 100%;
+  display: flex;
+  padding-left: 0px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.header_buttons span {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header_buttons span:first-child {
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #666666;
+  margin-bottom: -2px;
+}
+
+.header_buttons span:not(:last-child) {
+  margin-right: 24px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  color: @color_signIn;
+}
+
+.login:hover #login {
+  fill: #000000;
+  transition: 0.2s;
+}
+
+.login:hover span {
+  color: black;
+  transition: 0.2s;
+}
+
+.login_button {
+  margin-left: 10px;
+  margin-right: 128px;
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/icons/login.svg');
+}
+
+.main_container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 812px;
+}
+.main_container1 h1 {
+  margin: 40px 0 24px;
+  font-size: 44px;
+  font-weight: @font-weight_h1;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.case1,
+.case2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_container1 span {
+  font-weight: @font-weight_span;
+  margin-bottom: 40px;
+}
+
+.main_container1 button {
+  width: 175px;
+  height: 56px;
+  border: none;
+  font-weight: @font-weight_span;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  background: @color_yellow_background;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.make_request:hover {
+  background: #fcc521;
+  transition: 0.3s;
+}
+
+.make_request:active {
+  background: #fab619;
+  transition: 0.3s;
+}
+
+.case2 {
+  margin: 64px 0 56px;
+}
+
+.main {
+  background: @color_white_background;
+}
+
+.main_container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main_container2 h2 {
+  font-size: 44px;
+  font-weight: @font-weight_h1;
+  margin: 76px 0 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.case3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_container2 img {
+  margin: 24px 0 0px 135px;
+  background: white;
+  border-radius: 24px;
+  width: 720px;
+}
+
+.ul_case3 {
+  margin: 75px 128px 195px 48px;
+  padding-left: 0px;
+}
+
+.ul_case3 li {
+  background: url('assets/icons/Rectangle.svg') no-repeat left center;
+  padding: 5px 10px 5px 25px;
+  list-style: none;
+  margin: 0;
+
+  vertical-align: middle;
+}
+
+.ul_case3 li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.Blocks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.Block1,
+.Block2,
+.Block3 {
+  display: flex;
+  width: 336px;
+  height: 232px;
+  background: white;
+  border-radius: 24px;
+}
+
+.main_container3 h2 {
+  font-size: 44px;
+  font-weight: @font-weight_h1;
+  margin: 76px 0 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main_container3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_container3 div:not(:last-child) {
+  margin-right: 48px;
+}
+
+.Block1 .text_div,
+.Block2 .text_div,
+.Block3 .text_div {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 32px 60px 32px;
+}
+
+.text_div h3 {
+  margin: 0 0 16px 0;
+  font-weight: @font-weight_700;
+}
+
+.text_div span {
+  font-weight: @font-weight_span;
+  line-height: 1.5;
+}
+
+.main_container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_container4 h2 {
+  font-size: 44px;
+  font-weight: @font-weight_h1;
+  margin: 76px 0 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  width: 1104px;
+  margin: 24px 96px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+details {
+  width: 912px;
+  margin: 0 96px;
+}
+
+details:not(:first-child) {
+  border-top: 1px solid #dddfe0;
+}
+
+details summary:after {
+  display: flex;
+  justify-content: space-between;
+  content: url('assets/icons/arrow.svg');
+}
+
+details[open] summary:after {
+  transform: rotate(180deg);
+}
+
+details summary {
+  list-style: none;
+  margin: 28px 0 28px 0;
+  font-weight: @font-weight_700;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container ul {
+  padding: 0;
+}
+
+.container li {
+  margin: 12px;
+  background: url('assets/icons/Rectangle.svg') no-repeat left center;
+  list-style: none;
+  padding: 0px 10px 0px 25px;
+  font-weight: @font-weight_span;
+  font-size: 15px;
+}
+
+.container li:last-child {
+  margin-bottom: 28px;
+}
+
+.main_container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_container5 h2,
+.main_container6 h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 44px;
+  margin: 76px 0 24px;
+  font-weight: @font-weight_h1;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.Block2_1 .text_div,
+.Block2_2 .text_div {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 32px 60px 32px;
+}
+
+.Blocks_2,
+.Blocks3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.Block2_1,
+.Block2_2,
+.Block3_1,
+.Block3_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 24px;
+  width: 528px;
+  height: 212px;
+  background: white;
+}
+.Blocks_2 div:not(:last-child) {
+  margin-right: 48px;
+}
+
+.ul_case5 {
+  padding: 0;
+  margin: 0;
+}
+
+.ul_case5 li {
+  background: url('assets/icons/Rectangle.svg') no-repeat left center;
+  padding: 0px 0px 0px 25px;
+  list-style: none;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ul_case5 li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.text_div h3 {
+  margin: 0 0 12px 0;
+  font-weight: @font-weight_700;
+  font-size: 24px;
+}
+
+.Block3_1,
+.Block3_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 24px;
+  width: 528px;
+  height: 320px;
+  background: white;
+}
+
+.text_div {
+  margin: 32px 32px 32px;
+}
+
+.Blocks3 div:not(:last-child) {
+  margin-right: 48px;
+}
+
+.main_container6 img {
+  margin-bottom: 44px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.steps div:not(:last-child) {
+  margin-right: 48px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  background-size: 240px;
+  border-radius: 24px;
+  margin-top: 28px;
+  width: 240px;
+  height: 160px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: @font-weight_800;
+  font-size: 24px;
+  color: white;
+  width: 56px;
+  height: 56px;
+  background: #333333;
+  border-radius: 16px;
+  position: relative;
+  top: -28px;
+}
+
+.text1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 32px 32px 32px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: @font-weight_span;
+  line-height: 24px;
+}
+
+.main_container7 h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 44px;
+  margin: 76px 0 48px;
+  font-weight: @font-weight_h1;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main_container8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 128px 68px 128px;
+  background: white;
+  border-radius: 24px;
+  width: 1104px;
+  height: 420px;
+  box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.1003),
+    0px 12.34px 17.869px rgba(0, 0, 0, 0.0417275),
+    0px 12.52px 20.02px rgba(0, 0, 0, 0.035),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), inset 0px 5px 0px #3e4757;
+}
+
+.Box_into {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 64px 192px 72px 192px;
+  width: 720px;
+  height: 284px;
+}
+
+.main_container8 span {
+  margin: 0 0 32px;
+  font-weight: @font-weight_h1;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label,
+input {
+  width: 536px;
+  height: 56px;
+  background: #ecf1f7;
+  border-radius: 8px;
+  border: none;
+}
+
+.inputs label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+input {
+  padding: 0;
+  text-indent: 16px;
+}
+
+.city_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 536px;
+}
+
+.icon2 {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+}
+
+.check {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 536px;
+  height: 80px;
+}
+.checkbox {
+  width: 24px;
+  height: 24px;
+  accent-color: #ffdd2d;
+}
+
+.tag_a {
+  text-decoration: none;
+  color: #336fee;
+}
+
+.main_container8 a:not(:last-child) {
+  margin-left: 12px;
+}
+
+.check label {
+  font-weight: @font-weight_span;
+  font-size: 13px;
+  color: #858585;
+  margin-left: 12px;
+}
+
+.send {
+  width: 147px;
+  height: 56px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  background: @color_yellow_background;
+  border-radius: 8px;
+  border: none;
+  margin-left: 63px;
+}
+
+.send:hover {
+  background: #fcc521;
+  transition: 0.3s;
+}
+
+.send:active {
+  background: #fab619;
+  transition: 0.3s;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 128px;
+}
+
+.shadow {
+  margin-top: 44px;
+  width: 1104px;
+  height: 20px;
+  box-shadow: inset 0px -1px 0px #e7e8ea;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 1104px;
+  height: 128px;
+}
+
+.info span {
+  font-weight: @font-weight_span;
+  font-size: 13px;
+  color: #858585;
+}
